@@ -1,7 +1,7 @@
 #!/bin/bash
 ./bin/cli chmod u+x bin/magento
 
-docker-compose exec phpfpm /usr/local/bin/php ./bin/magento setup:install \
+/usr/local/bin/docker-compose exec phpfpm /usr/local/bin/php ./bin/magento setup:install \
   --db-host=db \
   --db-name=magento \
   --db-user=magento \
